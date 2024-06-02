@@ -1,6 +1,6 @@
 export class Todo{
-    srno : number | undefined
-    title : string | undefined
-    desc : string | undefined
-    active : boolean | undefined
+    srno!: number
+    title! : string 
+    desc!: string 
+    active!: boolean
 } 

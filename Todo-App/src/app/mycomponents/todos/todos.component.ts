@@ -6,7 +6,7 @@ import { Todo } from 'src/app/Todo';
   styleUrls: ['./todos.component.css']
 })
 export class TodosComponent {
-  todos: Todo[] | undefined;
+  todos: Todo[];
   constructor(){
     this.todos = [
       {
@@ -34,5 +34,10 @@ export class TodosComponent {
         active : true
       }
     ]
+  }
+  deleteTodo(todo: Todo){
+    console.log(todo);
+    const index = this.todos.indexOf(todo);
+    this.todos.splice(index, 1);
   }
 }
