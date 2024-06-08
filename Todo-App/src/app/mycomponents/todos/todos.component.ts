@@ -26,12 +26,6 @@ export class TodosComponent {
         title : 'title3 here',
         desc : 'desc3 here',
         active : true
-      },
-      {
-        srno : 4,
-        title : 'title4 here',
-        desc : 'desc4 here',
-        active : true
       }
     ]
   }
