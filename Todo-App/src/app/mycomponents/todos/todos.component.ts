@@ -9,29 +9,33 @@ export class TodosComponent {
   todos: Todo[];
   constructor(){
     this.todos = [
-      {
-        srno : 1,
-        title : 'title1 here',
-        desc : 'desc1 here',
-        active : true
-      },
-      {
-        srno : 2,
-        title : 'title2 here',
-        desc : 'desc2 here',
-        active : true
-      },
-      {
-        srno : 3,
-        title : 'title3 here',
-        desc : 'desc3 here',
-        active : true
-      }
+      // {
+      //   srno : 1,
+      //   title : 'title1 here',
+      //   desc : 'desc1 here',
+      //   active : true
+      // },
+      // {
+      //   srno : 2,
+      //   title : 'title2 here',
+      //   desc : 'desc2 here',
+      //   active : true
+      // },
+      // {
+      //   srno : 3,
+      //   title : 'title3 here',
+      //   desc : 'desc3 here',
+      //   active : true
+      // }
     ]
   }
   deleteTodo(todo: Todo){
     console.log(todo);
     const index = this.todos.indexOf(todo);
     this.todos.splice(index, 1);
+  }
+  addTodo(todo: Todo){
+    console.log(todo);
+    this.todos.push(todo);
   }
 }
