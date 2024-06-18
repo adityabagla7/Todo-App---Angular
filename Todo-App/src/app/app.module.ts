@@ -7,6 +7,7 @@ import { MycomponentsComponent } from './mycomponents/mycomponents.component';
 import { TodosComponent } from './mycomponents/todos/todos.component';
 import { TodoItemComponent } from './mycomponents/todo-item/todo-item.component';
 import { AddTodoComponent } from './mycomponents/add-todo/add-todo.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AddTodoComponent } from './mycomponents/add-todo/add-todo.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

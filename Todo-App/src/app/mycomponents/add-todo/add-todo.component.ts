@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-todo.component.css']
 })
 export class AddTodoComponent {
+  onSubmit(){
 
+  }
 }
